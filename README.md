@@ -5,8 +5,15 @@ protocol explanation:
 
 Command_Length + Command + Message_Length + Message
 
+
 command_Length = the length of the command(integer)
+
+
 Command = the command of the user(string)
+
+
 Message_Length = the length of the message(integer)
+
+
 Message = the message of the user(string)
 
