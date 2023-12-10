@@ -18,7 +18,7 @@ QUEUE_LEN = 1
 
 def dir(path):
     """
-        copies a file from the orginial_path into the copy_path
+        gives the files in the path
         :param path: the path to check
         :type: function
         :return: the files within a folder and "couldn't find the path" if it didn't find the path
@@ -26,7 +26,6 @@ def dir(path):
     try:
         files_list = glob.glob(path + "/*.*")
         final_dir = ', '.join(files_list).replace('\\', '/')
-        print(final_dir)
     except FileNotFoundError:
         final_dir = "couldn't find the path"
     return final_dir
