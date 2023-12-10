@@ -110,7 +110,7 @@ def main():
                     convert_string_to_image(response[1])
                     print("Screenshot has been taken!")
 
-                elif response[0] == 'You were disconnected from the server':
+                if response[0] == 'You were disconnected from the server':
                     print("Exiting....")
                     break
             else:
