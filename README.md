@@ -3,7 +3,7 @@
 
 protocol explanation:
 
-Command_Length + "$" + Command + "$" + Message_Length + Message
+Command_Length + "$" + Command + Message_Length + "$" + Message
 
 
 command_Length = the length of the command(integer)
